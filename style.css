@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #27D068;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+main {
+  margin: 15px;
+}
+
+.box {
+  width: 350px;
+  height: 350px;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid white;
+  font-size: 14px;
+  margin: 5px;
+  background-color: #27D068;
+  filter: drop-shadow(0 0 0.2rem white);
+  vertical-align: top;
+}
+
+.box:hover {
+  filter: drop-shadow(0 0 0rem white);
+}
+
+#bio-button {
+  display: block;
+}
+
+#bio-content {
+  display: none;
+}
