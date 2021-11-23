@@ -18,8 +18,8 @@ main {
 }
 
 .box {
-  width: 350px;
-  height: 350px;
+  width: 335px;
+  height: 335px;
   padding: 10px;
   display: inline-block;
   border: 1px solid white;
