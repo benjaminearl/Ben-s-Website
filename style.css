@@ -41,3 +41,45 @@ main {
 #bio-content {
   display: none;
 }
+
+.home-button {
+  padding: 10px;
+}
+
+.home-button a {
+  text-decoration: none;
+}
+
+.work p {
+  padding: 10px;
+  width: 50%
+}
+
+table, thead, tbody, tr, td {
+  border: 1px white solid
+}
+
+thead {
+  text-align: left;
+}
+
+th {
+  font-weight: normal;
+}
+
+td, th {
+  padding: 10px;
+}
+
+table {
+  width: 50%;
+  margin: 10px;
+  border-collapse: collapse;
+  border-spacing:0;
+}
+
+@media (max-width: 600px) {
+  table {
+    width: 95%;
+  }
+}

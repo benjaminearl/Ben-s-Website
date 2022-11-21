@@ -1,0 +1,161 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  a {
+    color: black;
+  }
+  
+  a:visited {
+    color: black
+  }
+
+  a:hover {
+    text-decoration: none;
+    cursor: alias;
+  }
+
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  #top-nav {
+    width: 100vw;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 15;
+  }
+
+  #title {
+      text-align: center;
+      background-color: white;
+      display: inline-block;
+      vertical-align: middle;
+      width: 550px;
+      margin-top: 50px;
+      position: relative;
+      z-index: 10;
+      padding: 15px
+  }
+
+  #title h1 {
+    margin-bottom: 5px
+  }
+
+  #title h2 {
+    margin-top: 0;
+  }
+
+  #top-nav ul {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+
+  #top-nav li {
+    display: inline-block;
+    color: blue;
+    margin: 0 10px;
+    border: 1px solid blue;
+    padding: 10px;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+  }
+
+  #top-nav li a {
+    color: blue
+  }
+
+  #top-nav li a:visited {
+    color: blue
+  }
+
+  #top-nav li:hover {
+      background-color: blue;
+      color: gainsboro;
+  }
+
+  #introduction {
+    background-color: gold;
+    padding: 25px;
+  }
+
+ .table-schedule {
+   margin-top: 20px;
+ }
+
+  table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: greenyellow;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  #tools {
+    background-color: tomato;
+    padding: 20px;
+  }
+
+.module {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: left;
+    position: relative;
+    z-index: 10;
+}
+
+#assignments {
+  background-color: bisque;
+  padding: 20px
+}
+
+#watching {
+  background-color: violet;
+  padding: 20px;
+}
+
+#reading {
+  background-color: cyan;
+  padding: 20px;
+}
+
+#colophon {
+  background-color: yellow;
+  padding: 20px;
+}
+
+@media all and (max-width: 600px) {
+  #title {
+    width: 100%;
+  }
+
+  #introduction {
+    margin-top: 90px;
+  }
+
+  #schedule h2 {
+    padding: 10px;
+  }
+}
