@@ -1,0 +1,679 @@
+html {
+  font-size: calc(0.8vw);
+}
+
+* {
+  scrollbar-width: none; /* hide scrollbar in firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 0px; /* hide scrollbar in edge and opera */
+}
+
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: white;
+  color: #333;
+  margin: 0;
+}
+
+
+/* -------------------- HEADER + contents ------------------- */
+header {
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  border-bottom: 1px solid;
+  background-color: white;
+  z-index: 1;
+}
+
+/* Start AUDIO PLAYER */
+.audio.green-audio-player {
+  margin-top: 1rem;
+  float: right;
+  display: inline-block;
+  margin-right: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.play-pause-btn {
+  display: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.slider {
+  flex-grow: 1;
+  background-color: #000000;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.progress {
+  background-color: black;
+  border-radius: inherit;
+  position: absolute;
+  pointer-events: none;
+}
+
+.pin {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  background-color: black;
+  position: absolute;
+  pointer-events: all;
+}
+
+.controls {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8em;
+  line-height: 1rem;
+  color: black;
+  display: inline-block;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  /* margin-right: 24px; */
+}
+
+.slider {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 2px;
+  height: 4px;
+  vertical-align: middle;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+}
+
+.pin {
+  right: -0.5rem;
+  /* top: -6px; */
+}
+
+.volume {
+  position: relative;
+  display: inline-block;
+}
+
+.volume-btn {
+  cursor: pointer;
+}
+
+.open path {
+    fill: #44BFA3;
+}
+
+.volume-controls {
+  width: 30px;      height: 135px;
+  background-color: rgba(0, 0, 0, 0.62);
+  border-radius: 7px;
+  position: absolute;
+  left: -3px;
+  bottom: 52px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.slider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 6px;
+  border-radius: 3px;
+}
+
+.progress {
+  bottom: 0;
+  height: 100%;
+  width: 6px;
+}
+
+.pin {
+  left: -5px;
+  top: -8px;
+}
+/* End AUDIO PLAYER */
+
+#logo {
+  height: 50%;
+  padding: 1em;
+  width: 5em;
+}
+
+.logo {
+  display: inline-block;
+  width: 20%;
+}
+
+.radio-link {
+  display: inline-block;
+  float: right;
+}
+
+
+/* ------------------- SIDEBARS ------------------- */
+
+/* #leftSidebar, #rightSidebar {
+  height: calc(100vh - 8rem - 1px);
+  width: 4rem;
+  border-right: 1px solid;
+  position: fixed;
+  left: 0;
+  top: calc(4rem + 1px);
+  background-color: white;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+} */
+
+#closeLeft, #openLeft, #closeRight, #openRight {
+  font-size: 0.8em;
+  text-align:center;
+  padding: 1rem;
+  padding-bottom: 0;
+  cursor: pointer;
+  width: 2rem;
+}
+
+#closeLeft, #closeRight {
+  display: none;
+}
+
+#openLeft, #openRight {
+  display: block;
+}
+
+#closeRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav {
+  margin: 0;
+  padding-left: 3rem;
+  margin-top: calc(-2rem - 3px);
+}
+
+/* #rightSidebar {
+  left: auto;
+  right: 0;
+  position: fixed;
+  border-left: 1px solid;
+  border-right: 0px;
+} */
+
+#glossary-content {
+  display: none;
+}
+
+#glossary-title {
+  position: sticky;
+  top: 0rem;
+  padding: 1rem;
+  background-color: white;
+
+}
+
+
+
+/* ------------------- MAIN SECTIONS ------------------- */
+/* #center {
+  height: calc(100vh - 8em - 2px);
+  width: calc(100vw - 8em - 2px);
+  margin-left: 4em;
+  transition: margin-left .5s;
+  position: absolute;
+  z-index: -1;
+  top: calc(4em + 1px);
+} */
+
+/* #left, #right {
+  width: calc(50% - 2em);
+  height: calc(100% - 2em);
+  padding: 1em;
+  overflow: scroll;
+}
+
+#left {
+  float: left;
+}
+
+#right {
+  float: right;
+  width: calc(50% - 2em - 1px);
+  border-left: 1px dotted lightgrey;
+} */
+
+/* #top, #middle, #bottom {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: calc(100% * 0.4);
+  border-bottom: 1px solid;
+}
+
+#bottom {
+  height: calc(100% * 0.2 - 2px - 2rem);
+  border-bottom: none;
+  padding: 1rem;
+  background-color: whitesmoke;
+} */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* #top::-webkit-scrollbar, #middle::-webkit-scrollbar, #bottom::-webkit-scrollbar {
+    display: none;
+} */
+
+
+/* #journal-left, #journal-right {
+  width: calc(20% - 2em);
+  height: calc(100% - 2em);
+  padding: 1em;
+  float: left;
+}
+#journal-right {
+  float: right;
+}
+
+#journal-center {
+  width: calc(60% - 2em - 2px);
+  height: calc(100%);
+  padding: 1em;
+  border-left: 1px dashed lightgrey;
+  border-right: 1px dashed lightgrey;
+  float: left;
+  overflow: scroll;
+  background-color: whitesmoke;
+} */
+
+/* ------------ HOMEPAGE BLOCKS -----------*/
+.block {
+  display: inline-block;
+  aspect-ratio: 1 / 1;
+  height: calc(100% - 2em);
+  border-right: 1px solid #333;
+  margin-right: -0.5em; /* because otherwise there is too much space between the blocks for some reason */
+  position: relative;
+  padding: 1em;
+  color: inherit;
+  white-space: normal;
+  vertical-align: top;
+}
+#bottom .block {
+  border: 1px solid lightgrey ;
+  border-radius: 1rem;
+  margin-right: 0.5em;
+  aspect-ratio: 3 / 2;
+  background-color: white;
+}
+
+.entry {
+  border: 1px solid lightgrey ;
+  border-radius: 1rem;
+  width: calc(100% - 2em);
+  padding: 1em;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+#journal-pagination {
+  position:absolute;
+  bottom:0;
+  min-width:calc(20% - 2px - 2em);
+}
+
+/* .block-content {
+  bottom: 1em;
+  position: absolute;
+  width: calc(100% - 2em);
+} */
+
+/* .block img {
+    width: calc(100% - 2em);
+    height: calc(100% - 5em);
+    object-fit: cover;
+    z-index: -10;
+    border-radius: 0.8em;
+    bottom: 1em;
+    position: absolute;
+    margin: 0;
+} */
+
+/* ---------- General elements ---------- */
+
+h1, h2, h3, p {
+  margin: 0;
+  margin-block-end: 0.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  margin-block-end: 1em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+h2 {
+  font-size: 1.2rem;
+
+}
+
+h3 {
+  font-size: 1rem;
+  color: lightgrey;
+  margin-block-end: 0.5em;
+}
+
+h4, h5, h6, small {
+  font-size: 0.8rem;
+  margin-block-end: 0.5em;
+}
+
+
+.bodytext p {
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.bodytext li {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+hr {
+  border-top: 0px;
+  border-bottom: 1px solid whitesmoke ;
+  margin: 2rem 0 2rem 0;
+}
+
+.bodytext figure {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.bodytext a {
+  color: #00f;
+}
+
+a.active {
+  color: blue;
+}
+
+a.profile {
+  color: inherit;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+section a {
+  color: blue;
+}
+
+.parent {
+  padding-bottom: 1em;
+}
+.parent a {
+  color: lightgrey;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.roundBorder {
+  border: 1px solid lightgrey;
+  border-radius: 3rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.profile {
+  display: inline-block;
+  background-color: lightgrey;
+  color: inherit;
+  border-radius: 1.5em;
+  padding: 0.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  text-decoration: none;
+}
+
+ul#people-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  text-align: center;
+}
+
+#people-overview img {
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+
+#people-overview .profile {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+
+
+/* ---------- MAGAZINE ---------- */
+
+ul.mag-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 2em;
+}
+
+.mag-overview img {
+  background-color: black;
+  width: 100%;
+  object-fit: cover;
+}
+.mag-overview h2 {
+  margin-block-end: 0em;
+  text-transform: none;
+}
+
+.issue-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 2em;
+  color: lightgrey;
+}
+
+
+/* Collapsible */
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: inherit;
+}
+
+.collapsible:hover {
+  color: blue;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+/* ---------- FOOTER ----------  */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 4rem;
+  width: 100%;
+  border-top: 1px solid;
+  background-color: white;
+  z-index: 1;
+  font-size: 0.8rem;
+}
+
+#chat {
+  width: 4rem;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 1.2rem;
+  right: 0;
+  position: absolute;
+  background-color: inherit;
+  z-index: 1;
+}
+
+
+#contact {
+  width: 2rem;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  background-color: inherit;
+  z-index: 1;
+  text-align: center;
+  border-left: var(--border-solid);
+
+}
+
+marquee {
+}
+
+#currently-in-topolo {
+  display: inline-block;
+  width: calc(100vw - 4em);
+  height: 100%;
+  position: absolute;
+  padding-top: 1rem;
+  left: 0;
+}
+
+/* MENU TREE ---------------------------------------- */
+
+  ul, li { list-style: none; margin: 0; padding: 0; }
+  nav ul {
+
+    padding-left: 1em;
+  }
+
+  nav li {
+    padding-left: 1em;
+    border: 1px solid black;
+    border-width: 0 0 1px 1px;
+  }
+
+  li.container { border-bottom: 0px; }
+
+  li.empty { font-style: italic;
+    color: silver;
+    border-color: silver;
+  }
+
+  nav p { margin: 0;
+    background: white;
+    position: relative;
+    padding-left: 0.5em;
+    padding-top: 1em;
+    top: 0.6em;
+    font-size: 1em;
+  }
+
+  nav ul {
+    border-top: 1px solid black;
+    margin-left: -1em;
+    padding-left: 2em;
+  }
+  nav li:last-child ul {
+    border-left: 1px solid white;
+    margin-left: calc(-1em - 1px);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+/* ------------- TIMELINE --------------- */
+
+
+.jqtl-event-node {
+  overflow: visible;
+  border-radius: 2em;
+  min-width: 2em;
+  max-height: 3em;
+  color: white;
+  border: 1px solid lightgrey;
+  margin-left: -15px; /* events start at rounded edge so need to be moved forward slightly */
+  margin-top: 10px;
+}
+
+.jqtl-ruler-line-item span {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.jqtl-event-label {
+  overflow: visible;
+  font-size: 0.8em;
+  z-index: 10;
+}
+
+.jqtl-event-label a {
+  text-decoration: none;
+  color: black;
+}
+

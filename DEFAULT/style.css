@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #27D068;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+main {
+  margin: 15px;
+}
+
+.box {
+  width: 335px;
+  height: 335px;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid white;
+  font-size: 14px;
+  margin: 5px;
+  background-color: #27D068;
+  filter: drop-shadow(0 0 0.2rem white);
+  vertical-align: top;
+}
+
+.box:hover {
+  filter: drop-shadow(0 0 0rem white);
+}
+
+#bio-button {
+  display: block;
+}
+
+#bio-content {
+  display: none;
+}
+
+.home-button {
+  padding: 10px;
+}
+
+.home-button a {
+  text-decoration: none;
+}
+
+.work p {
+  padding: 10px;
+  width: 50%
+}
+
+table, thead, tbody, tr, td {
+  border: 1px white solid
+}
+
+thead {
+  text-align: left;
+}
+
+th {
+  font-weight: normal;
+}
+
+td, th {
+  padding: 10px;
+}
+
+table {
+  width: 50%;
+  margin: 10px;
+  border-collapse: collapse;
+  border-spacing:0;
+}
+
+.currently {
+  background-color: #e4b300;
+  color: black
+}
+
+@media (max-width: 600px) {
+  table {
+    width: 95%;
+  }
+}

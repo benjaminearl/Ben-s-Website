@@ -1,0 +1,15 @@
+title: Journal
+preset: journal
+image:
+  icon: 📓
+  back: "#fff9e8"
+
+
+sections:
+  entries:
+    type: pages
+    label: Entries
+    template: journal-entry
+    info: "{{ page.date.toDate('d.m.Y') }}"
+    empty: No entries yet
+    sortBy: date desc

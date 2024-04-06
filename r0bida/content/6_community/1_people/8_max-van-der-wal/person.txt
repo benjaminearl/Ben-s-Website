@@ -1,0 +1,42 @@
+Title: Max Van der wal
+
+----
+
+Authors: 
+
+----
+
+Text: 
+
+----
+
+Birthyear: 
+
+----
+
+Birthcountry: 
+
+----
+
+Link1: 
+
+----
+
+Link2: 
+
+----
+
+Category: away
+
+----
+
+Updated-upstream-uuid:
+
+7EsLbnDE4piun7iD
+=======
+Uuid: tBmCmyxaRfqOHyBW
+>>>>>>> Stashed changes
+
+----
+
+Uuid: bQ2rkjoDwoOyZF3t

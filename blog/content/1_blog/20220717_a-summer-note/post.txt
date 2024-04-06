@@ -1,0 +1,13 @@
+Title: A Summer Note
+
+----
+
+Text: [{"content":{"text":"<p>This is just a little note to say that I am currently taking part in a residency programme at <a href=\"https:\/\/www.sasso-residency.ch\/\" target=\"_blank\" rel=\"noopener noreferrer\">Sasso Residency<\/a> in Ticino, CH. I actually plan to write a few more posts on here as part of the things that I do during my month here, but for now I am journaling my time and thoughts in quite sporadic ways over at a little page I made specifically for the this moment: <a href=\"https:\/\/sasso.bnjmnearl.eu\/\" rel=\"noopener noreferrer\">sasso.bnjmnearl.eu<\/a>. <\/p><p>Feel free to check it out, browse around and come back to hang out later. Also I'm always up for talking, if theres things that you think whilst reading then please send me a message through any of the various channels you can find.<\/p><p>In the meantime, here is the first photograph I took after I arrived here<\/p>"},"id":"1858fb56-c0d6-4cd4-87aa-3bc8f86ab6c6","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["img_6305.jpg"],"src":"","alt":"The view from the courtyard of the residency looking over Lago Maggiore.","caption":"The view from the courtyard of the residency looking over Lago Maggiore.","link":"","ratio":"","crop":"false"},"id":"da7c13ac-4a61-47fa-a5da-4c01bd6502d0","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-07-17
+
+----
+
+Tags: residency, sasso, website

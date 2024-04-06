@@ -1,0 +1,54 @@
+Title: Jack Bardwell
+
+----
+
+Authors: 
+
+----
+
+Color: #a02222
+
+----
+
+Text: 
+
+----
+
+Birthyear: 
+
+----
+
+Birthcountry: 
+
+----
+
+Link1: 
+
+----
+
+Link1label: 
+
+----
+
+Link2: 
+
+----
+
+Link2label: 
+
+----
+
+Category: away
+
+----
+
+Updated-upstream-uuid:
+
+JEihGAqZuVhniz60
+=======
+Uuid: 3tBc7dhsTdEs30Oo
+>>>>>>> Stashed changes
+
+----
+
+Uuid: Yh4Ex3DVMz2npegl

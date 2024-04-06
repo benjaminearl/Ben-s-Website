@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOAA-18 Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+      </style>
+</head>
+<body>
+    <div id="map"></div>
+  <script>
+    // Create Leaflet map
+    const map = L.map('map', {zoomControl: false}).setView([51.505, -0.09], 6);
+
+    // Add map tile layer
+    const tileLayerUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const tileLayerAttribution = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+    L.tileLayer(tileLayerUrl, { attribution: tileLayerAttribution }).addTo(map);
+
+    // Create satellite marker
+    const satelliteIcon = L.icon({
+      iconUrl: 'satellite.png',
+      iconSize: [32, 32],
+    });
+    const satelliteMarker = L.marker([0, 0], { icon: satelliteIcon }).addTo(map);
+    
+    // Get Satellite Position
+    const norad_id = 28654;
+    const observer_lat = 41.702;
+    const observer_lng = -76.014;
+    const observer_alt = 0;
+    const seconds = 2;
+    const api_key = '4J989X-GZMXTK-JW4T2J-3WEU';
+
+    const url = `https://satellite-server.herokuapp.com/https://api.n2yo.com/rest/v1/satellite/positions/28654/41.702/-76.014/0/1/&apiKey=4J989X-GZMXTK-JW4T2J-3WEU`;
+
+    function getSatellitePosition() {
+    fetch(url, {
+        method: 'GET',
+        mode: "cors",
+        headers: { 'Content-Type': 'application/json' }
+    })
+        .then(response => response.json())
+        .then(data => {
+        if (data.positions && data.positions.length > 0) {
+            const longitude = data.positions[0].satlongitude;
+            const latitude = data.positions[0].satlatitude;
+            satelliteMarker.setLatLng([latitude, longitude]);
+            map.setView([latitude, longitude]);
+            console.log(`Longitude: ${longitude}`);
+            console.log(`Latitude: ${latitude}`);
+        } else {
+            console.error('No positions found');
+        }
+        })
+        .catch(error => console.error(error));
+    }
+
+    // Fetch satellite position every 5 seconds
+    setInterval(getSatellitePosition, 5000);
+</script>
+
+</body>
+</html>

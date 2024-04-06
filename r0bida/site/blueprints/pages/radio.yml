@@ -1,0 +1,25 @@
+Title: Radio Robida
+image:
+  icon: 📡
+  back: "#fff9e8"
+
+columns:
+  - width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          text:
+            type: textarea
+            label: About
+          archive:
+            type: url
+            label: Link to archive
+  - width: 1/2
+    sections:
+      broadcasts:
+        type: pages
+        template: event
+        title: Broadcast
+        info: "{{ page.date }}"
+        sortBy: date Desc

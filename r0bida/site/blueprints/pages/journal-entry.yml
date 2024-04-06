@@ -1,0 +1,38 @@
+Title: entry
+image:
+  icon: 📓
+  back: "#fff9e8"
+
+columns:
+  - width: 2/3
+    sections:
+      info:
+        type: fields
+        fields:
+          date:
+            type: date
+            label: Published on
+            default: today
+            width: 1/2
+          people:
+            label: Author
+            type: pages
+            empty: Select profile
+            query: site.find('community').find('people')
+            max: 1
+            required: true
+            width: 1/2
+          related:
+            label: Relates to
+            help: (does this entry relate or react to another piece on the website?)
+            type: pages
+            width: 1/2
+          tags:
+            label: Tags
+            type: tags
+            width: 1/2
+          text:
+            type: blocks
+            label: Text
+            required: true
+          

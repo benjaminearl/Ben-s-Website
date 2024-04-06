@@ -1,0 +1,44 @@
+title: Robida Magazine
+
+columns:
+  # left/up
+  left:
+    width: 1/2
+    sections:
+
+      content:
+        type: fields
+        fields:
+
+          # description (standard)
+          text:
+            label: Text
+            type: textarea
+            required: true
+
+          colophon:
+            label: Colophon
+            type: structure
+            fields:
+              role:
+                label: Role
+                type: text
+              person:
+                label: Person
+                type: pages
+                multiple: true
+                query: site.find('community').find('people')
+# -------------------------
+
+  # right/down
+  right:
+    width: 1/2
+    sections:
+
+      # issues
+      subpages:
+        type: pages
+        template: issue
+
+
+# -------------------------

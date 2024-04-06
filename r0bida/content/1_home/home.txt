@@ -1,0 +1,33 @@
+Title: Home
+
+----
+
+Homeblocks:
+
+- projects/summer-school
+- projects/robida-magazine
+- projects/radio-robida
+- projects/academy-of-margins
+- projects/residency
+- topolo
+
+----
+
+Radiostream: https://radio.goodtimesbadtimes.club/radio/8000/radio.mp3
+
+----
+
+Text: 
+
+----
+
+Updated-upstream-uuid:
+
+ZmPVpMy2f28TRtKy
+=======
+Uuid: U001C5h4KlX1ITZ1
+>>>>>>> Stashed changes
+
+----
+
+Uuid: 7cuXxsQCrCRh75Wj

@@ -1,0 +1,5 @@
+Title: Blog
+
+----
+
+Text: A place for some words.

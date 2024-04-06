@@ -1,0 +1,42 @@
+Title: Kim Lang
+
+----
+
+Authors: 
+
+----
+
+Text: 
+
+----
+
+Birthyear: 
+
+----
+
+Birthcountry: 
+
+----
+
+Link1: 
+
+----
+
+Link2: 
+
+----
+
+Category: away
+
+----
+
+Updated-upstream-uuid:
+
+M0AWKOvJWNx13eaR
+=======
+Uuid: yTkDKPos1NSVMqia
+>>>>>>> Stashed changes
+
+----
+
+Uuid: MyVyeOVUocKUzsy3

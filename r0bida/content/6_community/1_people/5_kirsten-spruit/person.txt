@@ -1,0 +1,57 @@
+Title: Kirsten Spruit
+
+----
+
+<<<<<<< Updated upstream
+Authors: - kZOy6JZz
+=======
+Authors: 
+>>>>>>> Stashed changes
+
+----
+
+Color: #fff8e7
+
+----
+
+Text: I'm a designer and artist based in Rotterdam. With a background in graphic design and strong inclination towards time-based media – particularly sound – and writing, I like to explore issues relating to information (overload), (non)productivity and (spending) time.
+
+----
+
+Birthyear: 1993
+
+----
+
+Birthcountry: The Netherlands
+
+----
+
+Link1: https://kirstenspruit.com/
+
+----
+
+Link1label: website
+
+----
+
+Link2: https://www.instagram.com/
+
+----
+
+Link2label: instagram
+
+----
+
+<<<<<<< Updated upstream
+Category: away
+
+----
+
+Uuid: fsnDJLei9KRgqHlQ
+=======
+Category: home
+
+----
+
+Uuid: BOd1CPIwfRUWFFyS
+>>>>>>> Stashed changes

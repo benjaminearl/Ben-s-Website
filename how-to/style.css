@@ -1,0 +1,30 @@
+body {
+  background-color:aliceblue;
+  color:slategrey
+}
+
+a {
+  color:forestgreen
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  .home-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 500px) {
+    .home-container {
+      width: 90%;
+      margin: 0 auto; 
+    }
+  }
+  

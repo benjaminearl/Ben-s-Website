@@ -1,0 +1,13 @@
+Title: Christmas Rain
+
+----
+
+Text: [{"content":{"text":"<p>It rained a lot on Christmas day this year. I think it rained from the moment I was awake to the moment I went to sleep. Unfortunately this meant that we couldn't go for our normal Christmas walk so easily. We went for a small one around the fields and got drenched. It made me realise I need waterproof trousers, they serve more activities than just cycling in the Netherlands.<\/p><p>After Christmas dinner, I went into my parents garage for more firewood. The door was open and the sound of the rain hitting the door, the car outside and the ground was really nice so I recorded it. At the end of the recording a murmuration of starlings flew by which was quite special. <\/p>"},"id":"aa8df369-5b45-4295-aba1-984eb6a86d8e","isHidden":false,"type":"text"},{"content":{"source":["new-recording-7.mp3"],"title":"Christmas Rain","subtitle":"Rain from the garage of my parents house","description":"Rain on christmas day","controls":"true","autoplay":"false"},"id":"1d5b74f8-5b65-4187-9f60-2d5bb1213beb","isHidden":false,"type":"audio"}]
+
+----
+
+Published: 2021-12-30 10:00:00
+
+----
+
+Tags: water, christmas, audio

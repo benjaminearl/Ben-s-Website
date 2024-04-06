@@ -1,0 +1,46 @@
+Title: Vida Rucli
+
+----
+
+Authors: 
+
+----
+
+Text: Vida Rucli co-founded Robida many years ago. She studied architecture and graduated with a thesis on partisan monuments of Socialist Yugoslavia and their relation with landscape. She likes readers, a certain combination of blue and dark green and to read and talk on the radio.
+
+----
+
+Birthyear: 1993
+
+----
+
+Birthcountry: Italy
+
+----
+
+Link1: 
+
+----
+
+Link2: 
+
+----
+
+Category: home
+
+----
+
+Nationality: 
+
+----
+
+Updated-upstream-uuid:
+
+WWdyWooo7Bdg4GH4
+=======
+Uuid: mJpvmeBnjtmq2GFs
+>>>>>>> Stashed changes
+
+----
+
+Uuid: UmKtc3d7DeZ5MdQ2

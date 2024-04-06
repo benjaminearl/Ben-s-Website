@@ -1,0 +1,35 @@
+body {
+    background-color:lightgreen;
+    color:forestgreen;
+}
+
+a {
+    color:darkviolet;
+}
+
+* {
+    margin-top: 10px
+}
+
+.container {
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+}
+
+ul {
+    list-style-position: inside;
+    font-size: 30px;
+}
+
+img {
+    margin: 0 auto;
+}
+
+ol {
+    list-style-position: inside;
+}
