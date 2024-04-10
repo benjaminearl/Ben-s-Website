@@ -69,6 +69,14 @@ article img {
   width: 100%;
 }
 
+.img-caption {
+  font-size: 10px;
+}
+
+iframe {
+  border: 1px solid grey;
+}
+
 @media only screen and (max-width:550px) {
   .content {
     width: 100%;
