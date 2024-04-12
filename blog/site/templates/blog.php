@@ -1,18 +1,56 @@
 <?php snippet('header') ?>
 
-  <section class="content home">
+<?php
+        $filterBy = get('filter');
 
-  <?php foreach($site->find('blog')->children()->listed()->flip()->paginate(10) as $post): ?>
-      <div class="post">
-    <a href="<?php echo $post->url() ?>">
-      <h1><?php echo $post->title()->html() ?></h1>
-      <p><?= $post->published()->toDate('d.m.Y') ?></p>
-    </a>
-    <p><?= $post->text()->toBlocks()->excerpt(300) ?></p>
-    <div class="button"><a href="<?php echo $post->url() ?>">Read more</a></div>
+        $items = $page
+          ->children()
+          ->listed()
+          ->sortBy('published', 'desc');
+
+        $selectedItems = $items
+          ->when($filterBy, function($filterBy) {
+            return $this->filterBy('tags', $filterBy, ',');
+          })
+          ;
+          
+        $selectedTag  = param('tag');
+
+        $tags = $page
+        ->index()
+        ->pluck('tags', ',' , true);
+        sort($tags);
+      ?>
+
+  <section class="content home">   
+
+  <?php foreach($selectedItems as $selectedItem): ?>
+    <div class="post">
+      <a href="<?php echo $selectedItem->url() ?>">
+        <h1><?php echo $selectedItem->title()->html() ?></h1>
+        <p><?= $selectedItem->published()->toDate('d.m.Y') ?></p>
+      </a>
+      </div>
     </div>
   <?php endforeach ?>
 
+  <?php if($selectedItems->isEmpty()): ?>
+    <?php foreach($items as $item): ?>
+      <div class="post">
+      <a href="<?php echo $item->url() ?>">
+        <h1><?php echo $item->title()->html() ?></h1>
+        <p><?= $item->published()->toDate('d.m.Y') ?></p>
+      </a>
+      </div>
+    <?php endforeach ?>
+  <?php endif ?>
+  
   </section>
+  <div class="return">
+    <a href="<?= url('home') ?>">All posts</a>
+  </div>
 
 <?php snippet('footer') ?>
+
+
+

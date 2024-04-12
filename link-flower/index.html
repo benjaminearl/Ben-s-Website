@@ -5,15 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Earl's Link Flower</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            overflow: hidden; /* Hide scrollbar */
+            position: relative; /* Make sure leaves are positioned relative to the body */
+        }
+
+        .leaf {
+            position: absolute;
+            top: -50px; /* Start from the top */
+            font-size: 24px; /* Size of the leaf */
+            color: white; /* Color of the leaf */
+            animation: spin linear infinite; /* Add spinning animation */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
     <main>
         <div class="box">Ben's Link Flower</div>
         <div class="box"><span class="time"></span></div>
-        <a href="https://bnjmnearl.eu/"><div class="box">Ben's website</div></a>
+        <a href="https://blog.bnjmnearl.eu/blog/lamps-in-video-games-use-real-electricity"><div class="box">Lamps In Video Games Use Real Electricity</div></a>
         <a href="https://bnjmnearl.eu/"><div class="box">Ben's website</div></a>
         <a href="https://blog.bnjmnearl.eu/"><div class="box">Ben's Blog</div></a>
-      </main>
-      <script src="script.js"></script>
+        <a href="https://docs.google.com/spreadsheets/d/1M2Xa6bKP4IosfGn4oIDIaf8v0pVVaTgeFfb4N1Lwdbo/edit?usp=sharing"><div class="box">Ben's CV</div></a>
+    </main>
+    <script>
+        // Function to create a new leaf
+        function createLeaf() {
+            const leaf = document.createElement('span');
+            leaf.textContent = '⁕'; // Unicode for the leaf symbol
+            leaf.classList.add('leaf');
+            leaf.style.left = Math.random() * window.innerWidth + 'px'; // Random horizontal position
+            leaf.style.animationDuration = (Math.random() * 3 + 1) + 's'; // Random animation duration between 1 to 4 seconds
+            leaf.style.animationDirection = Math.random() < 0.5 ? 'normal' : 'reverse'; // Random animation direction
+            leaf.style.animationTimingFunction = 'linear'; // Animation timing function
+            document.body.appendChild(leaf);
+
+            // Animation to make the leaf fall
+            const animation = leaf.animate([
+                { top: '-50px' }, // Start position
+                { top: window.innerHeight + 'px' } // End position (bottom of the window)
+            ], {
+                duration: Math.random() * 20000 + 10000, // Random duration between 3 to 8 seconds
+                easing: 'linear',
+                iterations: 1, // Play the animation once
+                fill: 'forwards' // Keep the leaf at the end position after animation ends
+            });
+
+            // Remove the leaf from the DOM after animation ends
+            animation.onfinish = () => {
+                leaf.remove();
+            };
+        }
+
+        // Create new leaves every few milliseconds
+        setInterval(createLeaf, 2000);
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>

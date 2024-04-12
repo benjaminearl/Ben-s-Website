@@ -1,10 +1,12 @@
 <?php snippet('header') ?>
 
-<section class="content article">
+<section class="article">
   <article>
     <h1><?= $page->title()->html() ?></h1>
     <p><?= $page->published()->toDate('d.m.Y') ?></p>
-    <p class="tags"><?= $page->tags() ?></p> 
+    <?php foreach ($page->tags()->split() as $tag): ?>
+          <a href="<?= url('blog')?>?filter=<?= $tag ?>">#<?=$tag?></a><br>
+        <?php endforeach ?>
 
     <?= $page->text()->toBlocks() ?>
 
